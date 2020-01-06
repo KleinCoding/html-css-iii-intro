@@ -1,0 +1,80 @@
+body {
+    /* background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 80%;
+    /* background-size: 100vmax; */
+    display: flex float;
+    justify-content: space-around;
+    /* border: dashed green; */
+    height: 100vh;
+    width: 100vw;
+
+}
+.hero-image {
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 750px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* font-size: 30px */
+  }
+  .welcome-text{
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif';
+  }
+  .meet-text{
+      width: 1000px;
+      font-size: 75px;
+      font-weight: 550;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: 'Montserrat';
+      text-transform: uppercase!important;
+      word-wrap: initial;
+  }
+
+  .tellme-button{
+      background-color:#fed136;
+      border-color:#fed136;
+      font-size:18px;
+      padding: 20px 40px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s;
+      transition-property: color, background-color, border-color, box-shadow;
+      transition-duration: 0.152, 0.15s, 0.15s, 0.15s;
+      transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+      transition-delay: 0s, 0s, 0s, 0s;
+
+  }
+bodytext {
+    color: green;
+    
+}
+
+@media (max-width: 950px) {
+    body {
+        height: 59%
+    }
+}
+
+
+

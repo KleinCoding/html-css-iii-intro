@@ -1,17 +1,67 @@
+
+
+
 header {
-    background-color: gray;
-    display: flex;
+    display: flex ;
     justify-content: space-around;
-    height: 80px;
+    height: 60px;
+    /* border: dashed red; */
+    width: 100vw;
+    position: fixed;
+    /* margin-left: -45vw; */
+
+   
+}
+.site_name{
+    font-family: 'Kaushan Script';
+    color: rgb(254, 209, 54);
+    /* font-size: 50% */
+    /* font-style: italic; */
+    font-weight: 1;
+    font-size: 1.25rem;
+    padding-top: .3125rem;
+    padding-bottom: 3.125rem;
+    white-space: normal;
+
 }
 
+.menu-text{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 1.1em 1em!important;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-align: left;
+
+}
+
+/* .class {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    color: yellow 
+} */
+
+.site-nav{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    font-family: 'Roboto Slab'
+}
 .drop-down-menu, .drop-down-menu-open, .drop-down-menu-closed {
     width: 100vw;
-    background: blue;
+    background: rgb(33,37,41);
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .drop-down-menu {
@@ -64,7 +114,10 @@ img {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
+    header {
+        background-color: rgb(33,37, 41)
+    }
     img {
         display: block;
         transition: width 1s, height 1s;
@@ -77,6 +130,10 @@ img {
 
     .menu-text {
         display: none;
+    }
+
+    .site_name{
+        font-size: 99%;
     }
 }
 

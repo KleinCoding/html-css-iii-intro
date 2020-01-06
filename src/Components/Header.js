@@ -20,8 +20,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <header>
-                <h2>Site Name</h2>
-                <ul id='site-nav'>
+                <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,400i,900|Roboto+Slab&display=swap" rel="stylesheet"></link>
+                <h2 className = "site_name" class ="site_name">Start Bootstrap</h2>
+                <ul id='site-nav' class ='site-nav'>
                     <li className='menu-text'>Home</li>
                     <li className='menu-text'>About</li>
                     <li className='menu-text'>Contact</li>
@@ -40,6 +41,7 @@ export default class Header extends React.Component {
                         <li>Donate!</li>
                     </ul>
                 </ul>
+                <div></div>
             </header>
         )
     }
