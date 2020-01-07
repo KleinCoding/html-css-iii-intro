@@ -16,7 +16,7 @@ export default class Body extends React.Component {
             <button class ="tellme-button">TELL ME MORE</button>
           </div>
         </div>
-        <div className="Bodytext">This is da body</div>
+        {/* <div className="Bodytext">This is da body</div> */}
       </div>
     );
   }

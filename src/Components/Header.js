@@ -9,7 +9,7 @@ export default class Header extends React.Component {
         }
     }
 
-    handleClick = () => {
+    onClick = () => {
         if (this.state.menuStatus === 'drop-down-menu-open') {
             this.setState({ menuStatus: 'drop-down-menu-closed'})
         } else {
@@ -23,25 +23,27 @@ export default class Header extends React.Component {
                 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,400i,900|Roboto+Slab&display=swap" rel="stylesheet"></link>
                 <h2 className = "site_name" class ="site_name">Start Bootstrap</h2>
                 <ul id='site-nav' class ='site-nav'>
-                    <li className='menu-text'>Home</li>
+                    <li className='menu-text'>Services</li>
+                    <li className='menu-text'>Portfolio</li>
                     <li className='menu-text'>About</li>
+                    <li className='menu-text'>Team</li>
                     <li className='menu-text'>Contact</li>
-                    <li className='menu-text'>Donate!</li>
                     <li>
-                        <img
-                            onClick={this.handleClick}
-                            src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"
-                            alt='Menu icon'
-                        />
+                        
                     </li>
                     <ul className={this.state.menuStatus}>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Donate!</li>
+                    <li className='menu-text1'>Portfolio</li>
+                    <li className='menu-text1'>About</li>
+                    <li className='menu-text1'>Team</li>
+                    <li className='menu-text1'>Contact</li>
                     </ul>
                 </ul>
                 <div></div>
+                <button 
+                onClick={this.onClick}
+                class="menu-button">
+        Menu
+      </button>
             </header>
         )
     }

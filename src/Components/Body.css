@@ -13,11 +13,11 @@ body {
 }
 .hero-image {
     background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 750px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #cccccc; 
+    height: 750px; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
   }
   .hero-text {
     text-align: center;
@@ -26,7 +26,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /* font-size: 30px */
+
   }
   .welcome-text{
     font-size: 40px;
@@ -70,10 +70,8 @@ bodytext {
     
 }
 
-@media (max-width: 950px) {
-    body {
-        height: 59%
-    }
+@media (max-width: 1050px) {
+
 }
 
 

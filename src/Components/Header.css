@@ -37,16 +37,21 @@ header {
     color: #fff;
     font-family: 'Montserrat';
     text-align: left;
+    
 
 }
-
-/* .class {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    color: yellow 
-} */
+.menu-text1{
+    font-family: 'Montserrat';
+    font-size: 12x;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 35px;
+    display: block;
+    padding-bottom: 10.8px;
+    text-align: left;
+    text-decoration-style: solid;
+    list-style-position: outside;
+}
 
 .site-nav{
     align-items: center;
@@ -61,11 +66,12 @@ header {
     position: absolute;
     top: 100px;
     left: 0;
-    z-index: 0;
+    z-index: -1000;
 }
 
 .drop-down-menu {
     display: none;
+    font-family: 'Monserrat';
 }
 
 .drop-down-menu-open {
@@ -81,7 +87,7 @@ header {
         top: -1000px;
     }
     to {
-        top: 80px
+        top: 60px
     }
 }
 
@@ -105,16 +111,14 @@ header {
     color: #fff;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+.menu-button {
     display: none;
 }
 
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 1075px) {
     header {
         background-color: rgb(33,37, 41)
     }
@@ -135,6 +139,39 @@ img {
     .site_name{
         font-size: 99%;
     }
+    .menu-button{
+        display: block;
+    }
 }
 
-
+    .menu-button{
+        /* text-align: center;
+        margin: 0;
+        border-radius: .75rem;
+        font-size:12px;
+        right: 0px;
+        padding: 13px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 0;
+        background-color: #fed136;
+        font-family: 'Monserrat'; */
+        /* display: block; */
+        background-color:#fed136;
+        border-color:#fed136;
+        font-size:15px;
+        padding: 20px 20px;
+        font-family: 'Montserrat';
+        font-weight: 200;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.152, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
+        
+    }
